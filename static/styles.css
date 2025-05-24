@@ -14,7 +14,7 @@ body.home {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #333;
-    background: url("../static/images/bg-sunset-ocean.jpg") no-repeat center center / cover fixed;
+    background: url("../images/bg-sunset-ocean.jpg") no-repeat center center / cover fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -225,7 +225,7 @@ body.resume {
     font-size: 1.6rem;
     line-height: 1.6;
     color: #333;
-    background: url("../static/images/bg-home-office-studio.jpg") no-repeat center center / cover fixed;
+    background: url("../images/bg-home-office-studio.jpg") no-repeat center center / cover fixed;
     background-color: #f0f2f5;
     margin: 0;
 }
