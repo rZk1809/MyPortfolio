@@ -16,7 +16,8 @@ body.resume {
     font-size: 1.6rem;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background: url("../static/images/bg-home-office-studio.jpg") no-repeat center center / cover fixed;
+    background-color: #f0f2f5;
     margin: 0;
 }
 
@@ -32,7 +33,6 @@ h1 {
     font-size: 5rem;
     font-weight: 700;
     line-height: 1;
-    color: #ffffff;
 }
 
 h2 {
@@ -91,23 +91,52 @@ li {
 
 body.resume header {
     background-color: #34495e;
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
     position: relative;
 }
 
-body.resume header h1,
-body.resume header h2 {
-    color: #ffffff;
-    border-bottom: none;
-    margin-top: 0;
-    margin-bottom: 0.2em;
+body.resume header .content-wrapper {
+    background-color: #ffffff;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-body.resume header h2 {
+
+body.resume header .content-wrapper h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 1.1;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    border-bottom: none;
+}
+
+body.resume header .content-wrapper h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.2rem;
     font-weight: 400;
-    opacity: 0.9;
+    font-size: 2rem;
+    color: #5a6878;
+    margin-bottom: 0;
+    opacity: 1;
+    border-bottom: none;
+}
+
+main.content-wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.resume-section:first-of-type {
+    margin-top: 0px;
 }
 
 .btn.download-link {
@@ -154,17 +183,18 @@ body.resume header h2 {
 }
 
 .project-item {
-    background: #ffffff;
+    background: #fdfdfd;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .project-item img {
@@ -287,7 +317,10 @@ body.resume .socials img:hover {
     h1 {
         font-size: 4rem;
     }
-    body.resume header h2 {
+    body.resume header .content-wrapper h1 {
+        font-size: 4rem;
+    }
+    body.resume header .content-wrapper h2 {
         font-size: 1.9rem;
     }
     h2 {
@@ -298,6 +331,11 @@ body.resume .socials img:hover {
     }
     .content-wrapper {
         padding: 15px 20px;
+    }
+    main.content-wrapper {
+        padding: 30px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .download-link {
         font-size: 1.2rem;
@@ -314,11 +352,20 @@ body.resume .socials img:hover {
     h1 {
         font-size: 3.2rem;
     }
-    body.resume header h2 {
+    body.resume header .content-wrapper h1 {
+        font-size: 3.5rem;
+    }
+    body.resume header .content-wrapper h2 {
         font-size: 1.7rem;
     }
     h2 {
         font-size: 2.1rem;
+    }
+    main.content-wrapper {
+        padding: 20px 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 0;
     }
     .project-wrapper {
         grid-template-columns: 1fr;
