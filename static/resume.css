@@ -3,9 +3,7 @@ html {
     font-size: 62.5%;
 }
 
-*,
-*::before,
-*::after {
+* {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -129,8 +127,8 @@ body.resume header .content-wrapper h2 {
 main.content-wrapper {
     background-color: #ffffff;
     padding: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
