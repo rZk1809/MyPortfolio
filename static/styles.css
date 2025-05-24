@@ -14,7 +14,7 @@ body.home {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #333;
-    background: url("../static/images/bg-home-office-studio.jpg") no-repeat center center / cover fixed;
+    background: url("../static/images/bg-sunset-ocean.jpg") no-repeat center center / cover fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -196,4 +196,15 @@ footer a:focus {
     .socials li {
         margin: 0 7px;
     }
+}
+
+.resume-section h3{
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.resume-section #tech{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
 }
